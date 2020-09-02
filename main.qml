@@ -42,8 +42,11 @@ ApplicationWindow {
             console.log(currentIndex)
 
             if(currentIndex === 0) {
-                root.name = page2.name
-                page1.name = root.name
+                if(page2.name && page1.name)
+                {
+                    root.name = page2.name
+                    page1.name = root.name
+                }
             }
 
             if(currentIndex === 1) {
